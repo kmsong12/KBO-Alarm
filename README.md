@@ -4,6 +4,8 @@ Local Windows CLI that schedules a wake timer and attempts to play a live **Doos
 
 **Status:** schedule parsing and timezone conversion are tested with fixtures. Windows wake, audio control, official KBO discovery, and SOOP automation still require a laptop test. The development cloud fetched both sites’ HTML, but browser validation was blocked by proxy certificate trust: the injected proxy CA collides with an existing NSS certificate (same issuer and serial, different public key). The attempted approved repair was rolled back and original trust settings were verified. A clean, platform-supported browser trust configuration is needed for cloud browser validation. This is not yet a verified overnight alarm. No game on October 14 has been independently confirmed.
 
+**Future Implementations:** choose days of the week, separate cli command for time setting, multi-select different KBO teams, automatically mute when ads play, small front-end, connect to projector
+
 ## Install on your Windows laptop
 
 Install Python 3.11+ and Microsoft Edge. Open PowerShell in this repository:
